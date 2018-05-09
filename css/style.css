@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
@@ -110,6 +114,58 @@ header nav ul li a:hover {
 	display: inline;
 }
 
+
+/*----------OFERTA-----------------*/
+
+section.container h1 {
+	color: #7cb029;
+	font-size: 2em;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-left: 2%;
+}
+
+.box {
+	width: 29.333%;
+	float: left;
+	margin: 2%;
+	border: 1px solid #ccc;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.box h2 {
+	padding: 5% 0 0 5%;
+	font-size: 2.2em;
+	color: #000;
+}
+
+.box p {
+	padding: 5%;
+	font-size: 1.5em;
+	line-height: 1.4em;
+	color: #7d7d7d;
+}
+
+span.readmore a {
+	display: block;
+	margin: 5px;
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 2%;
+	font-size: 1.4em;
+	color: #7d7d7d;
+	text-decoration: none;
+}
+
+span.readmore a:hover {
+	background-color: #7cb029;
+	color: #fff;
+}
+
 /* MAX-WIDTH 1024*/
 
 @media screen and (max-width: 1024px) {
@@ -161,6 +217,45 @@ header nav ul li a:hover {
 	.slogan h1, .slogan h2 {
 		padding: 5px 0;
 	}
+
+	.box {
+		width: 96%;
+		position: relative;
+	}
+
+	.desc {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 5px;
+		background-color: rgba(124,176,41,0.8);
+	}
+
+	.box h2 {
+		color: #fff;
+		padding-left: 3%;
+		padding-top: 3%;
+	}
+
+	.box p {
+		color: #fff;
+		padding: 3%;
+	}
+
+	span.readmore a {
+		display: inline;
+		margin: 0;
+		border: 0;
+		float: right;
+		padding: 2% 5%;
+		color: #000;
+		background-color: rgba(255,255,255,0.8);
+	}
+
+	span.readmore a:hover {
+		background-color: #fff;
+		color: #000;
+	}
 }
 
 /* MAX-WIDTH 480*/
@@ -194,4 +289,25 @@ header nav ul li a:hover {
 		font-size: 2em;
 		line-height: 1.7em;
 	}
+
+	.desc {
+		position: relative;
+		padding: 0;
+	}
+
+	.box h2 {
+		padding: 4% 2% 0% 2%;
+	}
+
+	.box p {
+		padding: 2%;
+	}
+
+	span.readmore a {
+		display: block;
+		float: none;
+		padding: 3% 0;
+		margin: 0;
+	}
+
 }
