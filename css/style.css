@@ -187,7 +187,7 @@ span.readmore a:hover {
 	margin-bottom: 4%;
 }
 
-.left p, .right p {
+.left p, .right p, .content p {
 	color: #7d7d7d;
 	font-size: 1.4em;
 	margin: 2% 0;
@@ -264,6 +264,10 @@ footer {
 	color: #fff;
 	font-size: 1.2em;
 	line-height: 32px;
+/*	position: fixed;
+	bottom: 0;
+	left: 10%;
+	right: 10%;*/
 }
 
 .footer-left {
@@ -321,6 +325,50 @@ ul.social {
 	float: right;
 }
 
+/*-------oferta.html-------*/
+
+.title {
+	height: 80px;
+	width: 100%;
+	background: url('../images/slogan-bg.jpg') no-repeat top center;
+	background-size: cover;
+	overflow: hidden;
+	border-top: 4px solid #7cb029;
+	border-bottom: 4px solid #7cb029;
+}
+
+.title h1 {
+	font-family: 'Impact', sans-serif;
+	font-size: 3em;
+	color: #393b38;
+	display: inline;
+	padding: 5px 15px;
+	background: rgba(255,255,255,0.8);
+	line-height: 70px;
+}
+
+.content {
+	width: 65%;
+	float: left;
+}
+
+.sidebar {
+	width: 35%;
+	float: right;
+	padding-left: 4%;
+}
+
+.content h1, .sidebar h1 {
+	color: #7cb029;
+	font-size: 2em;
+	text-transform: uppercase;
+	margin: 15px 0;
+}
+
+.sidebar img {
+	border: 5px solid #7cb029;
+	margin-bottom: 15px;
+}
 
 /* MAX-WIDTH 1024*/
 
@@ -428,6 +476,14 @@ ul.social {
 	.realizations-box h2 {
 		transform: translateY(0);
 	}
+
+	.title {
+		text-align: center;
+	}
+
+	.content {
+		width: 100%;
+	}
 }
 
 /* MAX-WIDTH 480*/
@@ -484,6 +540,10 @@ ul.social {
 
 	.realizations-box {
 		width: 100%;
+	}
+
+	.content {
+		padding: 0 4%;
 	}
 }
 
