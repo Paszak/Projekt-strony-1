@@ -255,6 +255,73 @@ span.readmore a:hover {
 
 }
 
+/*------Footer-------*/
+
+footer {
+	margin-top: 10px;
+	border-top: 7px solid #2f2f2f;
+	background: url('../images/wild_oliva.png') top left repeat;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 32px;
+}
+
+.footer-left {
+	width: 46%;
+	margin: 2%;
+	float: left;
+}
+
+.footer-right {
+	width: 46%;
+	margin: 2%;
+	float: right;
+}
+
+ul.social li {
+	float: left;
+	margin-left: 10px;
+}
+
+ul.social li a {
+	display: block;
+	height: 32px;
+	width: 32px;
+	text-indent: 100%;
+	overflow: hidden;
+	background-image: url('../images/social-icons.png');
+	transition: all 350ms;
+}
+
+.facebook a {
+	background-position: 0 0;
+}
+
+.gplus a {
+	background-position: 0 -64px;
+}
+
+.twitter a {
+	background-position: 0 -128px;
+}
+
+.facebook a:hover {
+	background-position: 0 -32px;
+}
+
+.gplus a:hover {
+	background-position: 0 -96px;
+}
+
+.twitter a:hover {
+	background-position: 0 -160px;
+}
+
+ul.social {
+	float: right;
+}
+
+
 /* MAX-WIDTH 1024*/
 
 @media screen and (max-width: 1024px) {
@@ -417,5 +484,17 @@ span.readmore a:hover {
 
 	.realizations-box {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	
+	.footer-left {
+		width: 96%;
+		text-align: center;
+	}
+
+	.footer-right {
+		display: none;
 	}
 }
